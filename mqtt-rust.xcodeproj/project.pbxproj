@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CA60C0CB7770C956892DB55F /* Cargo */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CA6089F75B28095681D2F641 /* Build configuration list for PBXAggregateTarget "Cargo" */;
+			buildPhases = (
+				CA602C448E49B11A3B233166 /* Cargo build */,
+			);
+			dependencies = (
+			);
+			name = Cargo;
+			productName = Cargo;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		CA60AE77BF8F6D78611FA281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA60D73C509268C1CEDD02CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA60C0CB7770C956892DB55F;
+			remoteInfo = Cargo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA60AFB174717AA806F1AEA7 /* Cargo.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = Cargo.toml; sourceTree = "<group>"; };
+		CA60CF7BF0A217FCC760C91D /* mqtt-rust */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mqtt-rust"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99613BC235420B2001388CC /* main.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.rs; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		CA6035E899D69ECB934AF312 = {
+			isa = PBXGroup;
+			children = (
+				CA60AFB174717AA806F1AEA7 /* Cargo.toml */,
+				CA60A5FA8C56BB91070F63A1 /* Products */,
+				E99613BB235420B2001388CC /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		CA60A5FA8C56BB91070F63A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA60CF7BF0A217FCC760C91D /* mqtt-rust */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E99613BB235420B2001388CC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E99613BC235420B2001388CC /* main.rs */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA609F3455E6FB048EF3EC9E /* mqtt-rust-bin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6040E6BCA1B9C31D99E036 /* Build configuration list for PBXNativeTarget "mqtt-rust-bin" */;
+			buildPhases = (
+				CA60231123B2C5DF5C1D4373 /* Copy files (mqtt-rust) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA600BC2380F90450806F5DD /* PBXTargetDependency */,
+			);
+			name = "mqtt-rust-bin";
+			productName = "mqtt-rust";
+			productReference = CA60CF7BF0A217FCC760C91D /* mqtt-rust */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA60D73C509268C1CEDD02CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					CA609F3455E6FB048EF3EC9E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CA60C0CB7770C956892DB55F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA6089F75B28095681D2F641 /* Build configuration list for PBXAggregateTarget "Cargo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA6035E899D69ECB934AF312;
+			productRefGroup = CA60A5FA8C56BB91070F63A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA609F3455E6FB048EF3EC9E /* mqtt-rust-bin */,
+				CA60C0CB7770C956892DB55F /* Cargo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA60231123B2C5DF5C1D4373 /* Copy files (mqtt-rust) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(CARGO_XCODE_PRODUCTS_DIR)/mqtt-rust",
+			);
+			name = "Copy files (mqtt-rust)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/mqtt-rust",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ln -f \"${CARGO_XCODE_PRODUCTS_DIR}/mqtt-rust\" \"${BUILT_PRODUCTS_DIR}/\"";
+		};
+		CA602C448E49B11A3B233166 /* Cargo build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Cargo.toml",
+			);
+			name = "Cargo build";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -e; export PATH=$PATH:~/.cargo/bin:/usr/local/bin;\nif [ \"$ACTION\" = \"clean\" ]; then\n\tcargo clean;\nelse\n\tcargo build $CARGO_FLAGS;\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA600BC2380F90450806F5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA60C0CB7770C956892DB55F /* Cargo */;
+			targetProxy = CA60AE77BF8F6D78611FA281 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA600027D3777EDB37FE410D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CARGO_FLAGS = "";
+				CARGO_TARGET_DIR = "$(BUILD_DIR)/cargo-target";
+				CARGO_XCODE_PRODUCTS_DIR = "$(BUILD_DIR)/cargo-target/debug";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "mqtt-rust";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA60091807B2DCFFA9FDF809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CARGO_FLAGS = "--release";
+				CARGO_TARGET_DIR = "$(BUILD_DIR)/cargo-target";
+				CARGO_XCODE_PRODUCTS_DIR = "$(BUILD_DIR)/cargo-target/release";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "mqtt-rust";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA6085FAC8A905305809DC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "mqtt-rust";
+			};
+			name = Debug;
+		};
+		CA60FBB6E8716921B257C98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "mqtt-rust";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA6040E6BCA1B9C31D99E036 /* Build configuration list for PBXNativeTarget "mqtt-rust-bin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60FBB6E8716921B257C98D /* Release */,
+				CA6085FAC8A905305809DC50 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6089F75B28095681D2F641 /* Build configuration list for PBXAggregateTarget "Cargo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60091807B2DCFFA9FDF809 /* Release */,
+				CA600027D3777EDB37FE410D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA60D73C509268C1CEDD02CE /* Project object */;
+}
